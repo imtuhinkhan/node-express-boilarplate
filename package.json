@@ -1,0 +1,42 @@
+{
+  "name": "myshop-backend",
+  "version": "1.0.0",
+  "description": "backend for my shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/.env nodemon src/index.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "mern",
+    "react",
+    "node",
+    "mongodb",
+    "express"
+  ],
+  "author": "Tuhin khan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ckeditor": "^4.12.1",
+    "connect-mongodb-session": "^2.4.1",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.28.0",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.5",
+    "multer": "^1.4.2",
+    "slug": "^3.3.4",
+    "url-slug": "^2.3.2",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
