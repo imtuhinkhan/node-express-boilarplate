@@ -2,7 +2,7 @@
 Boiler plate for easy installation of node and express
 
 **Requirements:**
-  - nodejs sholud be installed in your local machine
+  - nodejs must be installed in your local machine
   
 **How to run:**
   - clone the project to your local mechine
