@@ -1,1 +1,12 @@
-/node_modules
+.idea/
+.vscode/
+.env
+node_modules
+build/
+images/*
+.DS_Store
+package-lock.json
+*.tgz
+npm-debug.log*
+/.changelog
+.npm/

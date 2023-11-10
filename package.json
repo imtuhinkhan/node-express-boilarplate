@@ -1,33 +1,41 @@
 {
-  "name": "nodejs-boilarplate",
+  "name": "ai-driven-chatbot",
   "version": "1.0.0",
-  "description": "This is a Node.js Express application with a basic setup.",
+  "description": "ai driven chatbot apis using openai and aws transcribe",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
-    "start":"npm start"
+    "start": "npm start"
   },
   "keywords": [
-    "Nodejs",
+    "chatbot",
     "ai",
-    "template",
-    "boilarplate",
-    "node basic setup",
+    "openai",
+    "lex",
+    "aws",
+    "transcribe",
     "api"
   ],
   "author": "Tuhin Khan",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "handlebars": "^4.7.8",
     "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "mailgun-js": "^0.22.0",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.1",
-    "nodemon": "^2.0.20"
+    "nodemailer": "^6.9.7",
+    "nodemon": "^2.0.20",
+    "otp-generator": "^4.0.1"
   }
 }
