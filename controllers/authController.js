@@ -79,9 +79,9 @@ const signIn = async (req, res) => {
     }else if (response) {
       res.json(response);
     } else {
-      res.status(401).json({ message: "Password do not match" });
+      res.status(401).json({ message: "Authentication failed" });
     }
-  } catch (e) {
+  } catch (error) {
     console.log(error.message);
     return res.status(500).json({ success: false, error: error.message });
   }

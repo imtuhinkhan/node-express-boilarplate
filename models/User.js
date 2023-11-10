@@ -40,7 +40,9 @@ userSchema.methods.toJSON = function () {
 
 userSchema.statics.findByCredential = async (email, password) => {
   const user = await User.findOne({ email });
-
+  if (!user) {
+    return false;
+  }
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
     return false;
@@ -55,8 +57,6 @@ userSchema.statics.findByCredential = async (email, password) => {
     data: user,
     access_token: token,
   };
-  console.log(token);
-  console.log(data);
   return data;
 };
 const User = mongoose.model('User', userSchema);
